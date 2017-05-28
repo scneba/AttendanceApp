@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".SettingsActivity">
+
+
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="70dip"
+            android:background="@color/appcolour" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteback"
+        android:orientation="vertical"
+        android:padding="10dip"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".SettingsActivity">
+        <RelativeLayout  android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dp"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/ssid"
+                android:textSize="14sp"
+                android:padding="5dip"
+                android:id="@+id/tvViewTitle"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="#eeeeee"
+                android:layout_below="@+id/tvViewTitle"
+                android:id="@+id/etSsid"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/pass"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etSsid"
+                android:textSize="14sp"
+                android:padding="5dip"
+                android:id="@+id/tvpassword"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:layout_below="@+id/tvpassword"
+                android:id="@+id/etKey"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/repeat"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etKey"
+                android:textSize="14sp"
+                android:padding="5dip"
+                android:id="@+id/tvRepeat"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:layout_below="@+id/tvRepeat"
+                android:id="@+id/etRepeat"
+                android:inputType="number" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi"
+                android:layout_marginTop="20dp"
+                android:id="@+id/checkBox"
+                android:layout_below="@+id/etRepeat"
+                android:layout_gravity="bottom"
+                android:checked="true"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/checkBox"
+                android:gravity="center"
+                android:layout_weight="0.26"
+                android:background="@drawable/shape1"
+                android:text="Save"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

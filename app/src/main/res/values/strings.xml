@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ETrack</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="track">Track</string>
+    <string name="trackLogin">Login to Track</string>
+    <string name="view">View</string>
+    <string name="uploader">Uploader</string>
+    <string name="viewTracks">View Tracks</string>
+    <string name="message">Messages</string>
+    <string name="viewMessage">View Messages</string>
+
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="emlogin">Student Login</string>
+    <string name="pls">Please Login Below</string>
+    <string name="emcode">Student Code</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="restart">Restart</string>
+    <string name="turnonwifi">Start Attendance</string>
+    <string name="turnoffwifi">Stop Attendance</string>
+    <string name="repeat">Repeat Time(Maximum should be 5 minutes)</string>
+
+    <string name="ssid">Change the SSID</string>
+    <string name="pass">Change Password</string>
+    <string name="wifi">Keep WiFi On After Recoding Attendance</string>
+</resources>
